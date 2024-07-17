@@ -1,3 +1,5 @@
+# To run on your local server firstly setup this in cmd or in gitbash i.e 
+git clone (https://github.com/Poojagoyal99/Internproj.git)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
