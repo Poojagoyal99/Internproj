@@ -1,9 +1,11 @@
+import loginImg1 from '../images/loginImg1.png';
+
 function Login() {
     return(
 <div className="bg-customSkin h-screen flex items-center justify-center">
                 <div className="bg-white shadow-lg rounded-lg flex max-w-4xl w-full h-80px">
                     <div className="w-1/2 hidden md:block">
-                        <img src="https://hblimg.mmtcdn.com/content/hubble/img/ujjain/mmt/activities/m_activities_ujjain_shree_mahakaleshwar_temple_p_538_404.jpg" alt="Placeholder" className="object-cover w-full h-full rounded-l-lg" />
+                        <img src={loginImg1} alt="Placeholder" className="object-cover w-full h-full rounded-l-lg" />
                     </div>
                     <div className="w-full md:w-1/2 p-8">
                         <h2 className="text-xl font-bold mb-6 text-center">Create your Free Account</h2>
