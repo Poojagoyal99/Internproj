@@ -8,6 +8,10 @@ module.exports = {
       colors: {
         customBrown: '#6D2E00',
         customSkin: '#E2C8B5',
+        customPeach: '#F26565'
+      },
+      boxShadow: {
+        'left-right-bottom': '5px 5px 5px rgba(0, 0, 0, 0.1)',
       },
     },
   },
