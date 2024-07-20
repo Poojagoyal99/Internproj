@@ -9,8 +9,8 @@ import f8 from '../../images/f8.png';
 function Facilities() {
   return (
     <div>
-      <div className="h-full w-full flex">
-        <div className="mx-20 my-3">
+      <div className="h-full w-full flex  my-40">
+        <div className="mx-10 my-3 pl-10 ">
           <h3 className="font-bold text-2xl">We do our best facilities</h3>
           <h3 className="font-bold text-2xl">provide you</h3>
           <p className="text-sm mt-6">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
@@ -23,38 +23,38 @@ function Facilities() {
         <div className="flex flex-col">
           <div className="mx-20 my-4 flex justify-between space-x-4">
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f1} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f1} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Private workspace</p>
             </div>
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f2} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f2} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
       <p className='text-center pt-5 text-lg'>Parking Area</p>
     
             </div>
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f3} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f3} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Breakfast</p>
             </div>
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f4} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f4} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Free Wifi</p>
             </div>
           </div>
           <div className="mx-20 my-2 flex justify-between space-x-4">
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f5} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f5} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Free Electricity</p>
             </div>
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f6} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f6} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Swimming Pool</p>
             </div>
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f7} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f7} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Exercise Space</p>
             </div>
             <div className="h-52 w-48 border border-gray rounded-xl shadow-md">
-            <img src={f8} className='w-16 h-12 mx-16 mt-10'></img>
+            <img src={f8} alt='icon' className='w-16 h-12 mx-16 mt-10'></img>
               <p className='text-center pt-5 text-lg'>Other Services</p>
             </div>
           </div>

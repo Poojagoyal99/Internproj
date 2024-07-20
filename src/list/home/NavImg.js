@@ -12,9 +12,9 @@ function NavImg() {
               <img src={logo} alt="logo" className="h-12" />
             </div>
             <div className="flex space-x-14">
-              <a href="#" className="text-white hover:text-gray-400">Discover</a>
-              <a href="#" className="text-white hover:text-gray-400">Rentals</a>
-              <a href="#" className="text-white hover:text-gray-400">Blog Post</a>
+              <button  className="text-white hover:text-gray-400">Discover</button>
+              <button  className="text-white hover:text-gray-400">Rentals</button>
+              <button  className="text-white hover:text-gray-400">Blog Post</button>
               <button className="bg-customPeach text-white px-4 py-2 rounded">Login</button>
             </div>
           </div>
@@ -61,7 +61,8 @@ function NavImg() {
                     <input
                       type="date"
                       id="checkout-date"
-                      className="bg-white text-black w-full py-2 pl-10 pr-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
+                       className="bg-white text-black w-full py-2 pl-10 pr-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
+                      style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1.5rem 1.5rem' }}
                     />
                   </div>
                 </div>
@@ -80,7 +81,7 @@ function NavImg() {
                       id="adults"
                       className="bg-white text-black w-full py-2 pl-10 pr-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
                       min="1"
-                      defaultValue="1"
+                      defaultValue=""
                       style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1.5rem 1.5rem' }}
                     />
                   </div>
@@ -98,7 +99,7 @@ function NavImg() {
                       id="children"
                       className="bg-white text-black w-full py-2 pl-10 pr-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
                       min="0"
-                      defaultValue="0"
+                      defaultValue=""
                       style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1.5rem 1.5rem' }}
                     />
                   </div>

@@ -2,13 +2,9 @@ import image from '../../images/imgtxt.png';
 function ImgTxt() {
 return(
 <>
-<div className="relative w-full h-96  overflow-hidden shadow-xl shadow-gray-400/90 mx-20 my-10">
-      <img
-        className="w-full h-full object-cover"
-        src={image}
-        alt="Card image"
-      />
-    </div>
+<div className='w-5/6 mx-36  mt-20 shadow-custom-dark'>
+  <img src={image} alt='imageText'></img>
+</div>
 </>
 );
 }
