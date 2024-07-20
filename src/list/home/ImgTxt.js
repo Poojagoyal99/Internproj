@@ -1,16 +1,13 @@
-
+import image from '../../images/imgtxt.png';
 function ImgTxt() {
 return(
 <>
-<div className="relative w-full h-96  overflow-hidden shadow-xl shadow-gray-400/90 mx-6 my-4">
+<div className="relative w-full h-96  overflow-hidden shadow-xl shadow-gray-400/90 mx-20 my-10">
       <img
-        className="w-screen h-full object-cover"
-        src="https://tse4.mm.bing.net/th?id=OIP.96VrGbDynP7JwLHldtURUgHaEK&pid=Api&P=0&h=180"
+        className="w-full h-full object-cover"
+        src={image}
         alt="Card image"
       />
-      <div className="absolute inset-0 flex items-center justify-center bg-opacity-90">
-        <h2 className="text-white text-2xl font-bold">byree</h2>
-      </div>
     </div>
 </>
 );
