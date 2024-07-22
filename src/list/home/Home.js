@@ -6,11 +6,18 @@ import NavImg from "./NavImg";
 import Review from "./Review";
 import Facilities from "./Facilities";
 import History from "./History";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateToAbout = () => {
+    navigate('/discover');
+  };
   return (
     <>
-      <NavImg></NavImg>
+      <NavImg navigateToAbout={navigateToAbout}></NavImg>
       <History></History>
       <div>
       <h1 className="text-customBrown text-center font-bold text-3xl py-20">Discover the best Hotels</h1>

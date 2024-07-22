@@ -2,7 +2,7 @@ import navImg from '../../images/loginImg1.png';
 import logo from '../../images/logo.png';
 import { FaCalendarAlt, FaUser } from 'react-icons/fa';
 
-function NavImg() {
+const NavImg = ({navigateToAbout}) => {
   return (
     <>
       <div className="relative w-screen min-h-screen overflow-hidden">
@@ -12,7 +12,7 @@ function NavImg() {
               <img src={logo} alt="logo" className="h-12" />
             </div>
             <div className="flex space-x-14">
-              <button  className="text-white hover:text-gray-400">Discover</button>
+              <button  className="text-white hover:text-gray-400" onClick={navigateToAbout}>Discover</button>
               <button  className="text-white hover:text-gray-400">Rentals</button>
               <button  className="text-white hover:text-gray-400">Blog Post</button>
               <button className="bg-customPeach text-white px-4 py-2 rounded">Login</button>
