@@ -3,6 +3,7 @@ import Login from "./list/Login";
 import Mainlogin from "./list/Mainlogin";
 import Home from './list/home/Home';
 import Discover from './list/discover/Discover';
+import Blog from './list/blog/Blog';
 function App() {
     return (
         <Router>
@@ -12,6 +13,7 @@ function App() {
           <Route path="/login" element={<Mainlogin />} />
           <Route path='/Home' element={<Home />} />
           <Route path='/discover' element={<Discover />} />
+          <Route path='/blog' element={<Blog />} />
         </Routes>
       </div>
     </Router>

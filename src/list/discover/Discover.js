@@ -2,10 +2,16 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/footer';
 import Cards from './Cards';
 import Searching from './Searching';
+import { useNavigate } from 'react-router-dom';
+
 function Discover() {
+    const navigate = useNavigate();
+    const navigateToAbout1 = () => {
+        navigate('/blog');
+      };
     return(
         <>
-<Navbar></Navbar>
+<Navbar navigateToAbout1 = {navigateToAbout1}></Navbar>
 <br></br>
 <Searching></Searching>
 <br></br>

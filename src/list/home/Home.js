@@ -15,9 +15,12 @@ const Home = () => {
   const navigateToAbout = () => {
     navigate('/discover');
   };
+  const navigateToAbout1 = () => {
+    navigate('/blog');
+  };
   return (
     <>
-      <NavImg navigateToAbout={navigateToAbout}></NavImg>
+      <NavImg navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1}></NavImg>
       <History></History>
       <div>
       <h1 className="text-customBrown text-center font-bold text-3xl py-20">Discover the best Hotels</h1>
