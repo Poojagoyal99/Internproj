@@ -2,14 +2,14 @@ import navImg from '../../images/loginImg1.png';
 import logo from '../../images/logo.png';
 import { FaCalendarAlt, FaUser } from 'react-icons/fa';
 
-const NavImg = ({navigateToAbout , navigateToAbout1}) => {
+const NavImg = ({navigateToAbout , navigateToAbout1,navigateToAbout2}) => {
   return (
     <>
       <div className="relative w-screen min-h-screen overflow-hidden">
         <nav className="absolute top-0 left-0 w-full z-10 bg-transparent my-7">
           <div className="container mx-auto flex justify-between items-center py-4 px-6">
             <div className="text-white text-lg font-bold">
-              <img src={logo} alt="logo" className="h-12" />
+             <button onClick={navigateToAbout2}> <img src={logo} alt="logo" className="h-12" /></button>
             </div>
             <div className="flex space-x-14">
               <button  className="text-white hover:text-gray-400" onClick={navigateToAbout}>Discover</button>
