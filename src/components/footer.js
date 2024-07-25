@@ -16,7 +16,8 @@ import {
   FaWifi,
 } from "react-icons/fa";
 import logo from "../images/logo.png";
-const Footer = () => {
+
+const Footer = ({navigateToAbout2}) => {
   return (
     <footer className="bg-customSkin text-white p-4">
       {/* Top  line */}
@@ -26,7 +27,7 @@ const Footer = () => {
         <div className="flex justify-around items-center">
           {/* Logo */}
           <div className="text-lg font-bold ">
-            <img src={logo} alt="logoimage"></img>
+           <button onClick={navigateToAbout2}> <img src={logo} alt="logoimage"></img> </button>
           </div>
 
           {/* Address and Phone Numbers */}

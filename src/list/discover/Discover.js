@@ -9,9 +9,12 @@ function Discover() {
     const navigateToAbout1 = () => {
         navigate('/blog');
       };
+      const navigateToAbout2 = () => {
+        navigate('/home');
+      };
     return(
         <>
-<Navbar navigateToAbout1 = {navigateToAbout1}></Navbar>
+<Navbar navigateToAbout1 = {navigateToAbout1} navigateToAbout2={navigateToAbout2}></Navbar>
 <br></br>
 <Searching></Searching>
 <br></br>
@@ -23,7 +26,7 @@ function Discover() {
     <button className='bg-customBrown text-white w-32 h-12 font-bold mr-20 rounded-lg'>Show More</button>
 </div>
 <br></br>
-<Footer></Footer>
+<Footer navigateToAbout2={navigateToAbout2}></Footer>
 </>
     );
 };

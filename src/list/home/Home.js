@@ -18,6 +18,9 @@ const Home = () => {
   const navigateToAbout1 = () => {
     navigate('/blog');
   };
+  const navigateToAbout2 = () => {
+    navigate('/home');
+  };
   return (
     <>
       <NavImg navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1}></NavImg>
@@ -32,7 +35,7 @@ const Home = () => {
       <ImgTxt></ImgTxt>
       <Facilities />
       <Review></Review>
-      <Footer></Footer>
+      <Footer navigateToAbout2={navigateToAbout2}></Footer>
     </>
   );
 };
