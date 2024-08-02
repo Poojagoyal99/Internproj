@@ -1,11 +1,21 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/footer";
 import postImg from "../../images/postimg1.png";
-
+import { useNavigate } from 'react-router-dom';
 const PostDetail = () => {
+    const navigate = useNavigate();
+    const navigateToAbout = () => {
+        navigate('/discover');
+      };
+    const navigateToAbout2 = () => {
+        navigate('/home');
+      };
+      const navigateToAbout1 = () => {
+        navigate('/blog');
+      };
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1}></Navbar>
             <div className="flex mx-32 my-24 space-x-10">
                 <div className="w-1/2">
                     <img src={postImg} alt="imageOfPost" className="h-96 w-full object-cover"></img>
@@ -36,7 +46,7 @@ const PostDetail = () => {
                     </p>
                 </div>
             </div>
-            <Footer></Footer>
+            <Footer navigateToAbout2={navigateToAbout2} ></Footer>
         </>
     );
 };

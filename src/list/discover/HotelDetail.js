@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const HotelDetail = () => {
-
+    
     return (
         <>
         <div className='flex mx-44 my-20'>
@@ -36,7 +36,13 @@ const HotelDetail = () => {
                     Meanwhile, an online reservation system also provides hoteliers with a streamlined way to handle reservations, availability, pricing, and guest information. 
                     Customize your entire booking flow with Bookinglayer.</p>
                 <button className='bg-customBrown text-white font-normal text-xl h-14 w-56 rounded-xl mt-12'>BOOK NOW</button>
-                
+                <h1 className='font-semibold text-3xl mt-8 text-gray-700'>Rating</h1>
+                <div className='flex'>
+                    <div className='font-bold text-7xl mt-10'><i>0.0</i><FontAwesomeIcon  icon={faStar} className="text-yellow-500 text-3xl" /></div>
+                    <div> rating lines</div>
+                </div>
+                <hr className='mt-5'></hr>
+                <div className='text-gray-500 mt-3'>Click to add a review.<button className='text-blue-500 ml-48'>+Add Review</button></div>
             </div>
         </div>
             <div className=' flex mx-44 space-x-10'>
