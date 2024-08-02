@@ -5,6 +5,7 @@ import Home from './list/home/Home';
 import Discover from './list/discover/Discover';
 import Blog from './list/blog/Blog';
 import ExploreCard from './list/discover/ExploreCard';
+import PostDetail from './list/blog/PostDetail';
 function App() {
     return (
         <Router>
@@ -16,6 +17,7 @@ function App() {
           <Route path='/discover' element={<Discover />} />
           <Route path='/blog' element={<Blog />} />
           <Route path="/hotel-details" element={<ExploreCard />} />
+          <Route path='/postdetails' element = {<PostDetail />} />
         </Routes>
       </div>
     </Router>

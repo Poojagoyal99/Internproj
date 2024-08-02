@@ -6,30 +6,33 @@ import blog5 from "../../images/blog5.png";
 import blog6 from "../../images/blog6.png";
 import blog11 from "../../images/blog11.png";
 import blog12 from "../../images/blog12.png";
+import { Link } from 'react-router-dom';
+
 const AllBlog = () => {
   return (
     <>
       <h1 className="font-semibold text-2xl mx-36">Recent Blog Posts</h1>
       <div className="flex space-x-6 mt-10">
-        <div className="ml-36 w-2/6 ">
+        <Link to='/postdetails' className="ml-36 w-2/6 ">
           <img src={blog11} alt="blogImage"></img>
           <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
           <h1 className="font-bold text-xl pt-3">Ujjain</h1>
           <p className="text-gray-500 pt-3">
-            Like to know the screts of transfornimg a 2-14 team itno a 3x Super
+            Like to know the secrets of transforming a 2-14 team into a 3x Super
             Bowl winning Dynasty?
           </p>
-        </div>
-        <div className="mr-36 flex space-x-4">
-            <div>
-          <img src={blog12} alt="blogImage" className="h-80"></img></div>
+        </Link>
+        <Link to='/postdetails' className="mr-36 flex space-x-4">
+          <div>
+            <img src={blog12} alt="blogImage" className="h-80"></img>
+          </div>
           <div className="w-48 mr-32">
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -39,21 +42,21 @@ const AllBlog = () => {
               <button className="bg-pink-100 text-pink-700 w-28 rounded-full h-8 ml-3 font-semibold">
                 Research
               </button>
-              </div>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <h1 className="font-semibold text-2xl mx-36 mt-10">All Blog Posts</h1>
       <div>
         <div className="flex mt-10 space-x-4 mr-32">
-          <div className="ml-36 ">
+          <Link to='/postdetails' className="ml-36">
             <img src={blog1} alt="blogImage"></img>
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -64,15 +67,15 @@ const AllBlog = () => {
                 Management
               </button>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link to='/postdetails'>
             <img src={blog2} alt="blogImage"></img>
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -86,15 +89,15 @@ const AllBlog = () => {
                 Frameworks
               </button>
             </div>
-          </div>
-          <div className="mr-36">
+          </Link>
+          <Link to='/postdetails' className="mr-36">
             <img src={blog3} alt="blogImage"></img>
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -105,17 +108,17 @@ const AllBlog = () => {
                 Research
               </button>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="flex mt-20 space-x-4 mr-32">
-          <div className="ml-36 ">
+          <Link to='/postdetails' className="ml-36">
             <img src={blog4} alt="blogImage"></img>
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -126,15 +129,15 @@ const AllBlog = () => {
                 Research
               </button>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link to='/postdetails'>
             <img src={blog5} alt="blogImage"></img>
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -148,15 +151,15 @@ const AllBlog = () => {
                 SaaS
               </button>
             </div>
-          </div>
-          <div className="mr-36">
+          </Link>
+          <Link to='/postdetails' className="mr-36">
             <img src={blog6} alt="blogImage"></img>
             <p className="font-bold text-purple-600 pt-3">Name 1 Jan 2023</p>
             <h1 className="font-bold text-xl pt-3">
               Bill Walsh leadership lessons
             </h1>
             <p className="text-gray-500 pt-3">
-              Like to know the screts of transfornimg a 2-14 team itno a 3x
+              Like to know the secrets of transforming a 2-14 team into a 3x
               Super Bowl winning Dynasty?
             </p>
             <div className="flex pt-3">
@@ -167,7 +170,7 @@ const AllBlog = () => {
                 Customer Success
               </button>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="bg-slate-200 w-5/6 ml-36  h-px mt-10 "></div>
@@ -185,4 +188,5 @@ const AllBlog = () => {
     </>
   );
 };
+
 export default AllBlog;

@@ -53,7 +53,7 @@ const HotelDetail = () => {
                    </div>
                 </div>
                 </div>
-                <p className='text-sm ml-10 mb-10'>A good hotel booking system serves as a centralized platform that allows guests to make reservations for rooms, amenities, and services. 
+                <p className='text-sm ml-10 mb-10 mr-20'>A good hotel booking system serves as a centralized platform that allows guests to make reservations for rooms, amenities, and services. 
                     Meanwhile, an online reservation system also provides hoteliers with a streamlined way to handle reservations, availability, pricing, and guest information. 
                     Customize your entire booking flow with Bookinglayer.</p>
             </div>
@@ -70,7 +70,7 @@ const HotelDetail = () => {
                    </div>
                 </div>
                 </div>
-                <p className='text-sm ml-10 mb-10'>A good hotel booking system serves as a centralized platform that allows guests to make reservations for rooms, amenities, and services. 
+                <p className='text-sm ml-10 mb-10 mr-20'>A good hotel booking system serves as a centralized platform that allows guests to make reservations for rooms, amenities, and services. 
                     Meanwhile, an online reservation system also provides hoteliers with a streamlined way to handle reservations, availability, pricing, and guest information. 
                     Customize your entire booking flow with Bookinglayer.</p>
             </div>
