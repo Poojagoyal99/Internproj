@@ -17,22 +17,24 @@ import {
 } from "react-icons/fa";
 import logo from "../images/logo.png";
 
-const Footer = ({navigateToAbout2}) => {
+const Footer = ({ navigateToAbout2 }) => {
   return (
     <footer className="bg-customSkin text-white p-4">
-      {/* Top  line */}
-      <div className="w-5/6 h-1 bg-customBrown mx-auto mt-12"></div>
+      {/* Top line */}
+      <div className="w-full h-1 bg-customBrown mt-12"></div>
 
-      <div className="container mx-auto py-16">
-        <div className="flex justify-around items-center">
+      <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo */}
-          <div className="text-lg font-bold ">
-           <button onClick={navigateToAbout2}> <img src={logo} alt="logoimage"></img> </button>
+          <div className="text-lg font-bold mb-6 md:mb-0">
+            <button onClick={navigateToAbout2}>
+              <img src={logo} alt="logoimage" className="max-h-12" />
+            </button>
           </div>
 
           {/* Address and Phone Numbers */}
-          <div className="text-right">
-            <div style={{ display: "flex", alignItems: "center" }}>
+          <div className="text-center md:text-right md:w-1/2 lg:w-2/3">
+            <div className="flex justify-center md:justify-end items-center mb-4">
               <FontAwesomeIcon
                 className="text-customBrown"
                 icon={faMapMarkerAlt}
@@ -42,12 +44,9 @@ const Footer = ({navigateToAbout2}) => {
                 ABC Company, 123 East, 17th Street, Ab Vd 100101
               </p>
             </div>
-            <div
-              style={{ display: "flex", alignItems: "center" }}
-              className="mt-5"
-            >
+            <div className="flex justify-center md:justify-end items-center mb-4">
               <FontAwesomeIcon
-                className="text-customBrown "
+                className="text-customBrown"
                 icon={faPhone}
                 style={{ marginRight: "8px" }}
               />
@@ -59,8 +58,8 @@ const Footer = ({navigateToAbout2}) => {
               />
               <p className="text-black">Phone: (123) 456-4321</p>
             </div>
-            <div className="flex justify-center space-x-4 mt-7">
-              <h4 className="text-gray-500">Social Media</h4>
+            <div className="flex justify-center md:justify-end space-x-4 mt-4">
+              <h4 className="text-gray-500">Follow Us</h4>
               <FaFacebookF className="text-customBrown" />
               <FaTwitter className="text-customBrown" />
               <FaLinkedinIn className="text-customBrown" />
@@ -73,12 +72,12 @@ const Footer = ({navigateToAbout2}) => {
           </div>
         </div>
 
-        {/* Bottom red line */}
-        <div className="w-5/6 h-px bg-gray-400 my-6"></div>
+        {/* Bottom line */}
+        <div className="w-full h-px bg-gray-400 my-6"></div>
 
-        <div className="flex justify-between items-center pl-20">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Links */}
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap justify-center md:justify-start space-x-4 mb-4 md:mb-0">
             <button className="text-black font-semibold text-sm">
               ABOUT US
             </button>
@@ -91,14 +90,14 @@ const Footer = ({navigateToAbout2}) => {
             <button className="text-black font-semibold text-sm">
               PRIVACY POLICY
             </button>
-            <button  className="text-black font-semibold text-sm">
+            <button className="text-black font-semibold text-sm">
               DISCLAIMER
             </button>
           </div>
 
           {/* Copyright */}
           <div>
-            <p className="text-gray-500 text-sm pr-44 ">
+            <p className="text-gray-500 text-sm">
               Copyright &copy; 2022 Biginit Company
             </p>
           </div>
