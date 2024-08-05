@@ -2,7 +2,7 @@ import navImg from '../../images/loginImg1.png';
 import logo from '../../images/logo.png';
 import { FaCalendarAlt, FaUser } from 'react-icons/fa';
 
-const NavImg = ({navigateToAbout , navigateToAbout1,navigateToAbout2}) => {
+const NavImg = ({navigateToAbout , navigateToAbout1,navigateToAbout2,navigateToAbout3}) => {
   return (
     <>
       <div className="relative w-screen min-h-screen overflow-hidden">
@@ -13,7 +13,7 @@ const NavImg = ({navigateToAbout , navigateToAbout1,navigateToAbout2}) => {
             </div>
             <div className="flex space-x-14">
               <button  className="text-white hover:text-gray-400" onClick={navigateToAbout}>Discover</button>
-              <button  className="text-white hover:text-gray-400">Rentals</button>
+              <button  className="text-white hover:text-gray-400" onClick={navigateToAbout3}>Rentals</button>
               <button  className="text-white hover:text-gray-400" onClick={navigateToAbout1}>Blog Post</button>
               <button className="bg-customPeach text-white px-4 py-2 rounded">Login</button>
             </div>
@@ -28,7 +28,7 @@ const NavImg = ({navigateToAbout , navigateToAbout1,navigateToAbout2}) => {
           <div className="text-container lg:w-1/2 flex flex-col items-start justify-center lg:justify-start lg:pl-16">
             <h2 className="text-white text-4xl font-normal">Discover Ujjain</h2>
             <h2 className="text-white text-4xl font-normal mb-2 py-4">with <b><i>Aaopadharo</i></b></h2>
-            <button className="bg-customPeach text-black px-4 py-2 rounded-full">Search Hotels</button>
+            <button className="bg-gradient-to-r from-ffe485 to-c1a43e text-black px-4 py-2 rounded-full">Search Hotels</button>
           </div>
           <div className="form-container lg:w-2/6 flex justify-end lg:pr-24">
             <div className="bg-white bg-opacity-50 p-4 rounded-3xl w-72 max-w-md h-80 ml-60">

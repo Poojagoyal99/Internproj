@@ -10,9 +10,12 @@ function Blog() {
     const navigateToAbout2 = () => {
         navigate('/home');
       };
+      const navigateToAbout3 = () => {
+        navigate('/rentals');
+      };
     return (
         <>
-        <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout}></Navbar>
+        <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout} navigateToAbout3={navigateToAbout3}></Navbar>
         <br></br>
         <AllBlog ></AllBlog>
         <br></br>

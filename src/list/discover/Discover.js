@@ -12,9 +12,12 @@ function Discover() {
       const navigateToAbout2 = () => {
         navigate('/home');
       };
+      const navigateToAbout3 = () => {
+        navigate('/rentals');
+      };
     return(
         <>
-<Navbar navigateToAbout1 = {navigateToAbout1} navigateToAbout2={navigateToAbout2}></Navbar>
+<Navbar navigateToAbout1 = {navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout3={navigateToAbout3}></Navbar>
 <br></br>
 <Searching></Searching>
 <br></br>

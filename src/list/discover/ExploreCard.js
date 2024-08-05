@@ -13,9 +13,12 @@ const ExploreCard = () =>{
       const navigateToAbout1 = () => {
         navigate('/blog');
       };
+      const navigateToAbout3 = () => {
+        navigate('/rentals');
+      };
     return(
         <>
-        <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1}></Navbar>
+        <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout3={navigateToAbout3}></Navbar>
         <HotelDetail></HotelDetail>
 
         <br></br>

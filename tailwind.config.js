@@ -9,7 +9,11 @@ module.exports = {
         customBrown: '#6D2E00',
         customSkin: '#E2C8B5',
         customPeach: '#F26565',
-        customLigthBrown: '#B16F3F'
+        customLigthBrown: '#B16F3F',
+        'fed8bc' : '#FED8BC',
+        'ffbe82' : '#FFBE82',
+        'ffe485' : '#FFE485',
+        'c1a43e': '#C1A43E'
       },
       boxShadow: {
         'left-right-bottom': '5px 5px 5px rgba(0, 0, 0, 0.1)',

@@ -13,9 +13,12 @@ const PostDetail = () => {
       const navigateToAbout1 = () => {
         navigate('/blog');
       };
+      const navigateToAbout3 = () => {
+        navigate('rentals');
+      };
     return (
         <>
-            <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1}></Navbar>
+            <Navbar navigateToAbout2={navigateToAbout2} navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout3={navigateToAbout3}></Navbar>
             <div className="flex mx-32 my-24 space-x-10">
                 <div className="w-1/2">
                     <img src={postImg} alt="imageOfPost" className="h-96 w-full object-cover"></img>

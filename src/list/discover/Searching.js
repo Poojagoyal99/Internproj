@@ -3,7 +3,7 @@ function Searching() {
     return(
         <>
         <div className="w-full h-full">
-        <div className="bg-yellow-600 w-9/12 h-32 mx-44 mt-10 rounded-3xl flex justify-evenly">
+        <div className="bg-gradient-to-r from-fed8bc to-ffbe82 w-9/12 h-32 mx-44 mt-10 rounded-3xl flex justify-evenly">
         <div>
             <h1 className='mt-6 font-bold text-2xl'>Book a Hotel</h1>
             <p className='text-lg text-gray-600 mt-2'>Discover the perfect space for you!</p>

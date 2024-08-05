@@ -1,6 +1,6 @@
 import logo from "../images/logo.png";
 
-const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout }) => {
+const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout , navigateToAbout3 }) => {
   return (
     <nav className="bg-customSkin p-4">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
@@ -15,7 +15,7 @@ const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout }) => {
             onClick={navigateToAbout}>
             Discover
           </button>
-          <button className="text-white hover:text-gray-400 px-4 py-2 md:px-6">
+          <button className="text-white hover:text-gray-400 px-4 py-2 md:px-6"  onClick={navigateToAbout3}>
             Rentals
           </button>
           <button
