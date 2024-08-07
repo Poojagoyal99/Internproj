@@ -24,7 +24,7 @@ const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout , navigate
             Blog Post
           </button>
           <button className="bg-customPeach text-white px-4 py-2 md:px-6 md:py-3 rounded mt-2 md:mt-0 w-full md:w-auto text-center">
-            Login
+            Logout
           </button>
         </div>
       </div>

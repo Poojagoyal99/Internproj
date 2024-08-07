@@ -15,7 +15,7 @@ const NavImg = ({navigateToAbout , navigateToAbout1,navigateToAbout2,navigateToA
               <button  className="text-white hover:text-gray-400" onClick={navigateToAbout}>Discover</button>
               <button  className="text-white hover:text-gray-400" onClick={navigateToAbout3}>Rentals</button>
               <button  className="text-white hover:text-gray-400" onClick={navigateToAbout1}>Blog Post</button>
-              <button className="bg-customPeach text-white px-4 py-2 rounded">Login</button>
+              <button className="bg-customPeach text-white px-4 py-2 rounded">Logout</button>
             </div>
           </div>
         </nav>
