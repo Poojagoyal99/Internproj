@@ -32,7 +32,7 @@ const Login = () => {
         <div className="bg-customSkin min-h-screen flex items-center justify-center p-4 md:p-0">
     <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row max-w-4xl w-full">
         <div className="w-full md:w-1/2">
-            <img src={loginImg1} alt="Placeholder" className="object-cover w-full h-full rounded-t-lg md:rounded-l-lg md:rounded-t-none" />
+            <img src={loginImg1} alt="Placeholder" className="object-cover w-full h-full rounded-t-lg md:rounded-tl-lg md:rounded-l-lg md:rounded-t-none" />
         </div>
         <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
             <h2 className="text-xl font-bold mb-6 text-center">Create your Free Account</h2>
@@ -83,9 +83,9 @@ const Login = () => {
                 <div className="text-center">
                     <p className="text-2xl text-gray-400">- OR -</p>
                     <div className="mt-5 flex justify-center">
-                        <button className="w-3/6 bg-white text-gray-500 py-2 mt-2 border border-black rounded-xl flex items-center justify-center">
-                            <img src="/google-logo.png" alt="Google logo" className="w-7 h-8 mr-1" />
-                            Sign up with Google
+                    <button className="max-w-full md:w-4/6 bg-white text-gray-500 py-2 mt-2 border border-black rounded-xl flex items-center justify-center">
+                            <img src="/google-logo.png" alt="Google logo" className="w-7 h-8" />
+                            <span className='pr-2'>Sign up with Google</span>
                         </button>
                     </div>
                 </div>

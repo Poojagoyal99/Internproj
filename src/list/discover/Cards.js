@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'; // Import Link
 function Cards() {
     return (
         <div className='flex flex-wrap justify-center space-x-0 md:space-x-32 mx-20 md:mx-20 my-10'>
-           <Link to="/hotel-details" className='w-full md:w-72 min-h-80 bg-gray-100 rounded-t-2xl rounded-b-xl m-2'>
+           <Link to="/hotel-details" className='w-full md:w-72 min-h-80 bg-gray-100 rounded-t-2xl rounded-b-xl m-2 hover:scale-110'>
                <img src={CardImg} alt='cardImg' className='w-72 rounded-t-2xl' />
                <p className='text-sm text-green-500 mt-3 ml-4'>Ujjain xyz</p>
                <h3 className='mt-2 text-xl font-semibold ml-4'>Best Hotel Park</h3>
@@ -20,7 +20,7 @@ function Cards() {
                </div>
            </Link>
 
-           <Link to="/hotel-details" className='w-full md:w-72 min-h-80 bg-gray-100 rounded-t-2xl rounded-b-xl m-2'>
+           <Link to="/hotel-details" className='w-full md:w-72 min-h-80 bg-gray-100 rounded-t-2xl rounded-b-xl m-2 hover:scale-110'>
                <img src={CardImg} alt='cardImg' className='w-72 rounded-t-2xl' />
                <p className='text-sm text-green-500 mt-3 ml-4'>Ujjain xyz</p>
                <h3 className='mt-2 text-xl font-semibold ml-4'>Best Hotel Park</h3>
@@ -34,7 +34,7 @@ function Cards() {
                </div>
            </Link>
 
-           <Link to="/hotel-details" className='w-full md:w-72 min-h-80 bg-gray-100 rounded-t-2xl rounded-b-xl m-2'>
+           <Link to="/hotel-details" className='w-full md:w-72 min-h-80 bg-gray-100 rounded-t-2xl rounded-b-xl m-2 hover:scale-110'>
                <img src={CardImg} alt='cardImg' className='w-72 rounded-t-2xl' />
                <p className='text-sm text-green-500 mt-3 ml-4'>Ujjain xyz</p>
                <h3 className='mt-2 text-xl font-semibold ml-4'>Best Hotel Park</h3>
