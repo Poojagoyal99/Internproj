@@ -1,25 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMapMarkerAlt,
-  faPhone,
-  faPrint,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaYoutube,
-  FaInstagram,
-  FaGoogle,
-  FaPinterest,
-  FaWifi,
+import { faMapMarkerAlt, faPhone, faPrint } from "@fortawesome/free-solid-svg-icons";
+import { 
+  FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, 
+  FaInstagram, FaGoogle, FaPinterest, FaWifi 
 } from "react-icons/fa";
 import logo from "../images/logo.png";
 
 const Footer = ({ navigateToAbout2 }) => {
   return (
-    <footer className="bg-customSkin text-white p-4">
+    <footer className="bg-customSkin text-white p-4 w-screen">
       {/* Top line */}
       <div className="w-full h-1 bg-customBrown mt-12"></div>
 
@@ -33,30 +23,22 @@ const Footer = ({ navigateToAbout2 }) => {
           </div>
 
           {/* Address and Phone Numbers */}
-          <div className="text-center md:text-right md:w-1/2 lg:w-2/3">
-            <div className="flex justify-center md:justify-end items-center mb-4">
-              <FontAwesomeIcon
-                className="text-customBrown"
-                icon={faMapMarkerAlt}
-                style={{ marginRight: "8px" }}
-              />
-              <p className="text-black">
-                ABC Company, 123 East, 17th Street, Ab Vd 100101
-              </p>
-            </div>
-            <div className="flex justify-center md:justify-end items-center mb-4">
-              <FontAwesomeIcon
-                className="text-customBrown"
-                icon={faPhone}
-                style={{ marginRight: "8px" }}
-              />
-              <p className="text-black">Mobile: (123) 456-7890</p>
-              <FontAwesomeIcon
-                className="text-customBrown mx-10"
-                icon={faPrint}
-                style={{ marginRight: "8px" }}
-              />
-              <p className="text-black">Phone: (123) 456-4321</p>
+          <div className="md:w-1/2 lg:w-2/3">
+            <div className="flex flex-col items-center md:items-end text-center md:text-right mb-4">
+              <div className="flex items-center mb-2">
+                <FontAwesomeIcon className="text-customBrown mr-2" icon={faMapMarkerAlt} />
+                <p className="text-black">
+                  ABC Company, 123 East, 17th Street, Ab Vd 100101
+                </p>
+              </div>
+              <div className="flex items-center mb-2">
+                <FontAwesomeIcon className="text-customBrown mr-2" icon={faPhone} />
+                <p className="text-black">Mobile: (123) 456-7890</p>
+              </div>
+              <div className="flex items-center mb-2">
+                <FontAwesomeIcon className="text-customBrown mr-2" icon={faPrint} />
+                <p className="text-black">Phone: (123) 456-4321</p>
+              </div>
             </div>
             <div className="flex justify-center md:justify-end space-x-4 mt-4">
               <h4 className="text-gray-500">Follow Us</h4>

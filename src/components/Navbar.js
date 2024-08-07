@@ -1,29 +1,82 @@
+import React, { useState } from 'react';
 import logo from "../images/logo.png";
 
-const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout , navigateToAbout3 }) => {
+const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout, navigateToAbout3 }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav className="bg-customSkin p-4">
+    <nav className="bg-customSkin p-4 w-full">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <div className="text-white text-lg font-bold">
           <button onClick={navigateToAbout2}>
             <img src={logo} alt="logoImage" className="h-8 md:h-10" />
           </button>
         </div>
-        <div className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 w-full md:w-auto">
+        <div className="md:hidden">
+          <button
+            id="menu-button"
+            className="text-white focus:outline-none"
+            onClick={toggleMenu}>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div className="hidden md:flex md:space-x-4 mt-4 md:mt-0 w-full md:w-auto">
           <button
             className="text-white hover:text-gray-400 px-4 py-2 md:px-6"
             onClick={navigateToAbout}>
             Discover
           </button>
-          <button className="text-white hover:text-gray-400 px-4 py-2 md:px-6"  onClick={navigateToAbout3}>
+          <button
+            className="text-white hover:text-gray-400 px-4 py-2 md:px-6"
+            onClick={navigateToAbout3}
+          >
             Rentals
           </button>
           <button
             className="text-white hover:text-gray-400 px-4 py-2 md:px-6"
-            onClick={navigateToAbout1}>
+            onClick={navigateToAbout1}
+          >
             Blog Post
           </button>
-          <button className="bg-customPeach text-white px-4 py-2 md:px-6 md:py-3 rounded mt-2 md:mt-0 w-full md:w-auto text-center">
+          <button className="bg-customPeach text-white px-4 py-2 md:px-6 md:py-3 rounded mt-2 md:mt-0 w-24 text-center">
+            Logout
+          </button>
+        </div>
+        <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden w-full`}>
+          <button
+            className="block text-white hover:text-gray-400 px-4 py-2"
+            onClick={navigateToAbout}
+          >
+            Discover
+          </button>
+          <button
+            className="block text-white hover:text-gray-400 px-4 py-2"
+            onClick={navigateToAbout3}
+          >
+            Rentals
+          </button>
+          <button
+            className="block text-white hover:text-gray-400 px-4 py-2"
+            onClick={navigateToAbout1}
+          >
+            Blog Post
+          </button>
+          <button className="block bg-customPeach text-white px-4 py-2 rounded mt-2 w-24 text-center">
             Logout
           </button>
         </div>
