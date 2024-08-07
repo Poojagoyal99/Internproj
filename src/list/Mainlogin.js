@@ -61,7 +61,8 @@ const Mainlogin=() =>{
                     {error && <p className="text-red-500">{error}</p>}
                     <button 
                         type="submit" 
-                        className="w-2/6 md:w-3/6 bg-customBrown text-white py-2 rounded-lg">
+                        className="w-2/6 md:w-3/6 bg-customBrown text-white py-2 rounded-lg"
+                        onClick={navigateToAbout}>
                         LOGIN
                     </button>
                 </div>
