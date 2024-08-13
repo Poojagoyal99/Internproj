@@ -23,9 +23,12 @@ const Home = () => {
   const navigateToAbout3 = () => {
     navigate('/rentals');
   };
+  const navigateToAbout4 = () => {
+    navigate('/login');
+  };
   return (
     <>
-      <NavImg navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout3={navigateToAbout3}></NavImg>
+      <NavImg navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout3={navigateToAbout3} navigateToAbout4={navigateToAbout4}></NavImg>
       <History></History>
       <div>
       <h1 className="text-customBrown text-center font-bold text-3xl py-20">Discover the best Hotels</h1>

@@ -13,9 +13,12 @@ const Rentals = () => {
     const navigateToAbout2 = () => {
       navigate('/home');
     };
+    const navigateToAbout4 = () => {
+      navigate('/login');
+    };
     return(
         <>
-        <Navbar navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2}  ></Navbar>
+        <Navbar navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout4={navigateToAbout4} ></Navbar>
         <br></br>
         <br></br>
         <Footer navigateToAbout2={navigateToAbout2}></Footer>

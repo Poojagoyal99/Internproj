@@ -16,9 +16,11 @@ const PostDetail = () => {
         navigate('/blog');
     };
     const navigateToAbout3 = () => {
-        navigate('rentals');
+        navigate('/rentals');
     };
-
+    const navigateToAbout4 = () => {
+        navigate('/login');
+    };
     return (
         <>
             <Navbar 
@@ -26,6 +28,7 @@ const PostDetail = () => {
                 navigateToAbout={navigateToAbout} 
                 navigateToAbout1={navigateToAbout1} 
                 navigateToAbout3={navigateToAbout3} 
+                navigateToAbout4={navigateToAbout4}
             />
             <div className="flex flex-col lg:flex-row md:mx-32 md:my-24 space-x-10">
                 <div className="w-fit lg:w-1/2 mx-5 my-5">

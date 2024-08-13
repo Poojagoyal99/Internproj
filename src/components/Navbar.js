@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../images/logo.png";
 
-const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout, navigateToAbout3 }) => {
+const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout, navigateToAbout3, navigateToAbout4 }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -57,7 +57,7 @@ const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout, navigateT
           >
             Blog Post
           </button>
-          <button className="bg-customPeach text-white px-4 py-2 md:px-6 lg:px-8 md:py-3 lg:py-4 rounded mt-2 md:mt-0 w-full lg:w-auto text-center">
+          <button className="bg-customPeach text-white px-4 py-2 md:px-6 lg:px-8 md:py-3 lg:py-4 rounded mt-2 md:mt-0 w-full lg:w-auto text-center" onClick={navigateToAbout4}>
             Logout
           </button>
         </div>
@@ -80,7 +80,7 @@ const Navbar = ({ navigateToAbout1, navigateToAbout2, navigateToAbout, navigateT
           >
             Blog Post
           </button>
-          <button className="block bg-customPeach text-white px-4 py-2 rounded mt-2 w-full lg:w-auto text-center">
+          <button className="block bg-customPeach text-white px-4 py-2 rounded mt-2 w-full lg:w-auto text-center" onClick={navigateToAbout4}>
             Logout
           </button>
         </div>
