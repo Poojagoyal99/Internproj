@@ -1,9 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/footer';
 import { useNavigate } from 'react-router-dom';
-import BookingCards from './BookingCards';
-import SearchingBar from './SearchingBar';
-const Rentals = () => {
+const DriverDetail = () => {
     const navigate = useNavigate();
 
     const navigateToAbout = () => {
@@ -21,12 +19,10 @@ const Rentals = () => {
     return(
         <>
         <Navbar navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout4={navigateToAbout4} ></Navbar>
-        <SearchingBar></SearchingBar>
-       <BookingCards></BookingCards>
-       <BookingCards></BookingCards>
-       <BookingCards></BookingCards>
+        <br></br>
+        <br></br>
         <Footer navigateToAbout2={navigateToAbout2}></Footer>
         </>
     );
 };
-export default Rentals;
+export default DriverDetail;

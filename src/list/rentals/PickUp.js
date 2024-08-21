@@ -1,9 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/footer';
 import { useNavigate } from 'react-router-dom';
-import BookingCards from './BookingCards';
-import SearchingBar from './SearchingBar';
-const Rentals = () => {
+const PickUp = () => {
     const navigate = useNavigate();
 
     const navigateToAbout = () => {
@@ -21,12 +19,22 @@ const Rentals = () => {
     return(
         <>
         <Navbar navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout4={navigateToAbout4} ></Navbar>
-        <SearchingBar></SearchingBar>
-       <BookingCards></BookingCards>
-       <BookingCards></BookingCards>
-       <BookingCards></BookingCards>
+        <div>
+          <div>
+<h1>Data Collection</h1>
+<p></p>
+<div>
+  <div></div><p>Pick Up Details</p>
+  <div></div>
+  <div></div><p>Driver</p>
+  <div></div>
+  <div></div><p>Confirm</p>
+</div>
+          </div>
+        </div>
+        <br></br>
         <Footer navigateToAbout2={navigateToAbout2}></Footer>
         </>
     );
 };
-export default Rentals;
+export default PickUp;

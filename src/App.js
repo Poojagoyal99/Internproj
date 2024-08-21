@@ -7,6 +7,7 @@ import Blog from './list/blog/Blog';
 import ExploreCard from './list/discover/ExploreCard';
 import PostDetail from './list/blog/PostDetail';
 import Rentals from './list/rentals/Rentals';
+import PickUp from './list/rentals/PickUp';
 function App() {
     return (
         <Router>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/hotel-details" element={<ExploreCard />} />
           <Route path='/postdetails' element = {<PostDetail />} />
           <Route path='/rentals' element = {<Rentals />} />
+          <Route path='/yourInfo' element = {<PickUp />} />
         </Routes>
       </div>
     </Router>
