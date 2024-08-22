@@ -8,6 +8,7 @@ import ExploreCard from './list/discover/ExploreCard';
 import PostDetail from './list/blog/PostDetail';
 import Rentals from './list/rentals/Rentals';
 import PickUp from './list/rentals/PickUp';
+import DriverDetail from './list/rentals/DriverDetail';
 function App() {
     return (
         <Router>
@@ -22,6 +23,7 @@ function App() {
           <Route path='/postdetails' element = {<PostDetail />} />
           <Route path='/rentals' element = {<Rentals />} />
           <Route path='/yourInfo' element = {<PickUp />} />
+          <Route path='/driverdetail' element = {<DriverDetail />} />
         </Routes>
       </div>
     </Router>

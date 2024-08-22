@@ -16,6 +16,10 @@ module.exports = {
         'c1a43e': '#C1A43E',
         customCream : '#EFEAE6'
       },
+      height: {
+        '500' : '500px',
+        '400' : '400px'
+      },
       boxShadow: {
         'left-right-bottom': '5px 5px 5px rgba(0, 0, 0, 0.1)',
         'custom-dark': '0 25px 50px -12px rgba(0, 0, 0, 0.75)',
