@@ -13,7 +13,8 @@ module.exports = {
         'fed8bc' : '#FED8BC',
         'ffbe82' : '#FFBE82',
         'ffe485' : '#FFE485',
-        'c1a43e': '#C1A43E'
+        'c1a43e': '#C1A43E',
+        customCream : '#EFEAE6'
       },
       boxShadow: {
         'left-right-bottom': '5px 5px 5px rgba(0, 0, 0, 0.1)',

@@ -65,6 +65,7 @@ const Mainlogin=() =>{
                         onClick={navigateToAbout}>
                         LOGIN
                     </button>
+                    <p className='text-gray-500 font-semibold pt-3'>OR Create Account?</p>
                 </div>
                 <div className="text-center">
                     <p className="text-2xl text-gray-400">- OR -</p>
