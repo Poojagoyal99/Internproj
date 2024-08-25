@@ -9,6 +9,7 @@ import PostDetail from './list/blog/PostDetail';
 import Rentals from './list/rentals/Rentals';
 import PickUp from './list/rentals/PickUp';
 import DriverDetail from './list/rentals/DriverDetail';
+import BookingConfirm from './list/rentals/BookingConfirm';
 function App() {
     return (
         <Router>
@@ -24,6 +25,7 @@ function App() {
           <Route path='/rentals' element = {<Rentals />} />
           <Route path='/yourInfo' element = {<PickUp />} />
           <Route path='/driverdetail' element = {<DriverDetail />} />
+          <Route path='/cabConfirm' element = {<BookingConfirm />} />
         </Routes>
       </div>
     </Router>
