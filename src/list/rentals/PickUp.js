@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/footer';
+import CheckIcon from '@mui/icons-material/Check'; 
 import { useNavigate } from 'react-router-dom';
 const PickUp = () => {
     const navigate = useNavigate();
@@ -29,13 +30,22 @@ const PickUp = () => {
           <div className='ml-28 h-400 w-1/3 mt-10 bg-customCream rounded-2xl'>
 <h1 className='text-xl font-medium pl-10 pt-6'>Data Collection</h1>
 <p className='text-gray-500 pl-10 pr-4 pt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-<div>
-  <div className='h-10 w-10 mt-5 ml-10 bg-yellow-500 rounded-full'><p></p><p className='pl-20 text-lg '>PickUp Details</p></div>
-  <div className='h-12 w-1 mt-1 ml-14 bg-yellow-500'><p className='pl-16 text-lg pt-16'>Driver</p></div>
+<div className='flex'>
+  <div>
+<div className='h-10 w-10 mt-4 ml-10 bg-yellow-500 rounded-full flex items-center justify-center'>
+                <CheckIcon style={{ fontSize: '2rem', color: 'white' }} />
+              </div>
+  <div className='h-12 w-1 mt-1 ml-14 bg-yellow-500'></div>
   <div className='h-10 w-10 mt-1 ml-10 pt-1 bg-gray-400 rounded-full'><span className='text-white text-2xl pl-3 font-bold'>2</span></div>
-  <div className='h-12 w-1 ml-14 mt-1 bg-gray-400'><p className='pl-16 pt-16 text-lg'>Confirm</p></div>
+  <div className='h-12 w-1 ml-14 mt-1 bg-gray-400'></div>
   <div className='h-10 w-10 mt-1 ml-10 pt-1 bg-gray-400 rounded-full'><span className='text-white text-2xl pl-3 font-bold'>3</span></div>
 </div>
+<div>
+              <p className='pl-16 pt-8 text-lg'>PickUp Details</p>
+              <p className='pl-16 pt-16 text-lg'>Driver</p>
+              <p className='pl-16 pt-16 text-lg'>Confirm</p>
+            </div>
+            </div>
           </div>
           <div >
           <form className='mt-20 lg:ml-28'>

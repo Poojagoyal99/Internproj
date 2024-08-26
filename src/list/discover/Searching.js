@@ -10,34 +10,27 @@ function Searching() {
         </div>
         <div className="flex justify-around">
         <div className="flex mb-4 space-x-4 mt-5">
-                <div className='w-28'>
+                <div className='w-32'>
                   <label className="block text-black text-sm font-semibold mb-2" htmlFor="checkin-date">
                     Check-In Date
                   </label>
                   <div className="relative">
-                    <span className="absolute inset-y-0 left-0 pl-3 flex items-center ">
-                      <FaCalendarAlt />
-                    </span>
                     <input
                       type="date"
                       id="checkin-date"
-                      className="bg-white text-black w-full py-2 pl-10 pr-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
+                      className="bg-white text-black w-full py-2  px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
                     />
                   </div>
                 </div>
-                <div className="w-28">
+                <div className="w-32">
                   <label className="block text-black text-sm font-semibold mb-2" htmlFor="checkout-date">
                     Check-Out Date
                   </label>
                   <div className="relative">
-                    <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-black">
-                      <FaCalendarAlt />
-                    </span>
                     <input
                       type="date"
                       id="checkout-date"
-                       className="bg-white text-black w-full py-2 pl-10 pr-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
-                      style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1.5rem 1.5rem' }}
+                       className="bg-white text-black w-full py-2 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none"
                     />
                   </div>
                 </div>

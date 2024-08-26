@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
-import { FaUser, FaCalendarAlt } from 'react-icons/fa';
+
+import { FaUser } from 'react-icons/fa';
 import navImg from '../../images/loginImg1.png';
 import logo from '../../images/logo.png';
 
 const NavImg = ({ navigateToAbout, navigateToAbout1, navigateToAbout2, navigateToAbout3, navigateToAbout4 }) => {
-  const [checkInDate, setCheckInDate] = useState(null);
-  const [checkOutDate, setCheckOutDate] = useState(null);
 
   return (
     <div>
@@ -48,15 +44,8 @@ const NavImg = ({ navigateToAbout, navigateToAbout1, navigateToAbout2, navigateT
                     Check-In Date
                   </label>
                   <div className="relative max-w-sm">
-                    <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-black">
-                      <FaCalendarAlt />
-                    </span>
-                    <DatePicker
-                      selected={checkInDate}
-                      onChange={(date) => setCheckInDate(date)}
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" 
-                      placeholderText="Select date"
-                    />
+                  
+    <input type='date' placeholder='select date' className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-2 p-2.5 " ></input>
                   </div>
                 </div>
                 <div className="w-32">
