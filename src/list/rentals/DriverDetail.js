@@ -1,66 +1,78 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/footer';
-import { useNavigate } from 'react-router-dom';
-import CheckIcon from '@mui/icons-material/Check'; 
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/footer";
+import { useNavigate } from "react-router-dom";
+import CheckIcon from "@mui/icons-material/Check";
 import driverImg from "../../images/driverImg.png";
 
 const DriverDetail = () => {
   const navigate = useNavigate();
 
   const navigateToAbout = () => {
-    navigate('/discover');
+    navigate("/discover");
   };
   const navigateToAbout1 = () => {
-    navigate('/blog');
+    navigate("/blog");
   };
   const navigateToAbout2 = () => {
-    navigate('/home');
+    navigate("/home");
   };
   const navigateToAbout4 = () => {
-    navigate('/login');
+    navigate("/login");
   };
   const navigateToAboutPickUp = () => {
-    navigate('/yourInfo');
+    navigate("/yourInfo");
   };
   const navigateToAboutBookingConfirm = () => {
-    navigate('/cabConfirm');
+    navigate("/cabConfirm");
   };
 
   return (
     <>
-      <Navbar navigateToAbout={navigateToAbout} navigateToAbout1={navigateToAbout1} navigateToAbout2={navigateToAbout2} navigateToAbout4={navigateToAbout4}></Navbar>
-      <div className='mx-28 my-20 h-500 w-5/6 rounded-2xl shadow-2xl shadow-slate-500 flex flex-row space-x-10'>
-        <div className='ml-12 h-400 w-2/3 mt-10 bg-customCream rounded-2xl'>
-          <h1 className='text-xl font-medium pl-10 pt-4'>Data Collection</h1>
-          <p className='text-gray-500  pl-10 pr-4 pt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-          <div className='flex'>
+      <Navbar
+        navigateToAbout={navigateToAbout}
+        navigateToAbout1={navigateToAbout1}
+        navigateToAbout2={navigateToAbout2}
+        navigateToAbout4={navigateToAbout4}
+      ></Navbar>
+      <div className="mx-4 md:mx-10 lg:mx-28 my-10 md:my-20 p-4 md:p-8 lg:p-10 bg-white rounded-2xl shadow-2xl shadow-slate-500 flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10">
+        <div className="md:w-1/3 bg-customCream p-6 rounded-2xl">
+          <h1 className="text-xl font-medium pl-10 pt-4">Data Collection</h1>
+          <p className="text-gray-500  pl-10 pr-4 pt-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+          <div className="flex">
             <div>
-              <div className='h-10 w-10 mt-4 ml-10 bg-yellow-500 rounded-full flex items-center justify-center'>
-                <CheckIcon style={{ fontSize: '2rem', color: 'white' }} />
+              <div className="h-10 w-10 mb-1 mt-3 ml-10 bg-yellow-500 rounded-full flex justify-center items-center">
+                <CheckIcon style={{ fontSize: "2rem", color: "white" }} />
               </div>
-              <div className='h-12 w-1 mt-1 ml-14 bg-yellow-500'></div>
-              <div className='h-10 w-10 mt-1 ml-10 bg-yellow-500 rounded-full flex items-center justify-center'>
-                <CheckIcon style={{ fontSize: '2rem', color: 'white' }} />
+              <div className="h-12 w-1 ml-14 bg-yellow-500"></div>
+              <div className="h-10 w-10 mt-1 ml-10 bg-yellow-500 rounded-full flex justify-center items-center">
+                <CheckIcon style={{ fontSize: "2rem", color: "white" }} />
               </div>
-              <div className='h-12 w-1 ml-14 mt-1 bg-gray-400'></div>
-              <div className='h-10 w-10 mt-1 ml-10 bg-gray-400 rounded-full flex items-center justify-center'>
-                <span className='text-white text-2xl font-bold'>3</span>
+              <div className="h-12 w-1 ml-14 mt-1 bg-gray-400"></div>
+              <div className="h-10 w-10 mt-1 ml-10 bg-gray-400 rounded-full flex items-center justify-center">
+                <span className="text-white text-2xl font-bold">3</span>
               </div>
             </div>
             <div>
-              <p className='pl-16 pt-8 text-lg'>PickUp Details</p>
-              <p className='pl-16 pt-16 text-lg'>Driver</p>
-              <p className='pl-16 pt-16 text-lg'>Confirm</p>
+              <p className="pl-16 pt-5 text-lg">PickUp Details</p>
+              <p className="pl-16 pt-16 text-lg">Driver</p>
+              <p className="pl-16 pt-16 text-lg">Confirm</p>
             </div>
           </div>
         </div>
         <div>
-          <div className='bg-customSkin h-72 w-72 rounded-2xl mt-20 ml-20'>
-            <img src={driverImg} alt='driverimage' className='h-72 w-72 py-5 px-5'></img>
+          <div className="bg-customSkin h-72 w-72 rounded-2xl mt-20 ml-20">
+            <img
+              src={driverImg}
+              alt="driverimage"
+              className="h-72 w-72 py-5 px-5"
+            ></img>
           </div>
         </div>
         <div>
-          <form className='mt-20 ml-8'>
+          <form className="mt-20 ml-8">
             <div className="min-w-60 md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-lg font-semibold mb-2">
                 Driver Name
@@ -95,12 +107,16 @@ const DriverDetail = () => {
           <div className="flex space-x-10 mt-14 mr-20">
             <button
               className="bg-gray-300 hover:bg-gray-500 text-white py-2 px-4 rounded w-36 text-xl"
-              type="submit" onClick={navigateToAboutPickUp}>
+              type="submit"
+              onClick={navigateToAboutPickUp}
+            >
               Back
             </button>
             <button
               className="bg-customPeach hover:bg-red-500 text-white py-2 px-4 rounded w-36 text-xl"
-              type="reset" onClick={navigateToAboutBookingConfirm}>
+              type="reset"
+              onClick={navigateToAboutBookingConfirm}
+            >
               Next
             </button>
           </div>
