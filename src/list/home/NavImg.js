@@ -92,7 +92,7 @@ const NavImg = ({
               </button>
             </div>
           </div>
-        </nav>
+        </nav>k
 
         <img
           className="w-full h-full object-cover opacity-90"
